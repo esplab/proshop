@@ -1,0 +1,27 @@
+object Form1: TForm1
+  Left = 350
+  Height = 514
+  Top = 55
+  Width = 595
+  AutoSize = True
+  Caption = 'Form1'
+  ClientHeight = 514
+  ClientWidth = 595
+  LCLVersion = '0.9.31'
+  object Button1: TButton
+    Left = 8
+    Height = 49
+    Top = 384
+    Width = 500
+    Caption = 'Crop'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Image1: TImage
+    Left = 8
+    Height = 375
+    Top = 8
+    Width = 500
+    Center = True
+  end
+end

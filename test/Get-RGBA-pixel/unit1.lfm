@@ -1,0 +1,58 @@
+object Form1: TForm1
+  Left = 885
+  Height = 240
+  Top = 304
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '2.2.6.0'
+  object Button1: TButton
+    Left = 72
+    Height = 25
+    Top = 16
+    Width = 75
+    Caption = 'Open'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Image1: TImage
+    Left = 24
+    Height = 154
+    Top = 56
+    Width = 172
+    Enabled = False
+    OnMouseMove = Image1MouseMove
+  end
+  object Shape1: TShape
+    Left = 224
+    Height = 65
+    Top = 56
+    Width = 65
+    Brush.Color = clBackground
+  end
+  object lblPixelFormat: TLabel
+    Left = 208
+    Height = 17
+    Top = 16
+    Width = 89
+    Caption = 'Pixel Format:'
+    ParentColor = False
+    Visible = False
+  end
+  object lblInfo: TLabel
+    Left = 224
+    Height = 17
+    Top = 128
+    Width = 27
+    Caption = 'Info'
+    ParentColor = False
+    Visible = False
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'All supported images|*.jpg;*.jpeg;*.jpe; *.png;*.bmp|JPEG Image|*.jpg;*.jpeg;*.jpe|PNG Images|*.png|Windows BMP Image|*.bmp'
+    Options = [ofExtensionDifferent, ofEnableSizing, ofViewDetail, ofAutoPreview]
+    Left = 16
+    Top = 16
+  end
+end
